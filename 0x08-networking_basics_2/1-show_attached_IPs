@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-#shows attached IPS
-ip a | grep "scope" | grep -Po '(?<=inet )[\d.]+'
+# this script will be used as an ip set up script, works in docker
+ifconfig | grep 'inet addr' | cut -d':' -f2 | cut -d' ' -f1
