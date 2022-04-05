@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Print Best School using until
+counter=1
+until [[ "$counter" -ge 10 ]]
+do 
+	echo "Best School"
+	let counter=counter+1
+done
