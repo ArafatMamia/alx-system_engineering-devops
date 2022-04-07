@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#display lines containing the bash word
+# shellcheck idsable=SC009
+ps auxf | grep "bash"
